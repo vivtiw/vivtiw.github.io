@@ -28,7 +28,20 @@
   <meta name="language" content="English">
   <meta name="revisit-after" content="7 days">
   <meta name="theme-color" content="#3498db">
-  
+
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+
+  <!-- Anti-Impersonation & Fraud Prevention -->
+  <meta name="author" content="Vivek Tiwari">
+  <meta name="copyright" content="© 2024 Vivek Tiwari. All rights reserved.">
+  <meta property="og:site_name" content="Vivek Tiwari - Official Portfolio">
+  <link rel="canonical" href="https://vivtiw.github.io/">
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
 </head>
@@ -72,9 +85,10 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-                      <a href="images/vivek_1.jpg">
-                        <img style="width:100%;max-width:100%" alt="Vivek Tiwari - Senior Software Developer" src="images/vivek_1.jpg" class="profile-image hoverZoomLink">
-                      </a>
+                      <div class="profile-image-container">
+                        <img style="width:100%;max-width:100%" alt="Vivek Tiwari - Senior Software Developer" src="images/vivek_1.jpg" class="profile-image hoverZoomLink protected-image" oncontextmenu="return false;" draggable="false">
+                        <div class="image-watermark">© VT</div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

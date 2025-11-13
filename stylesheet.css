@@ -404,6 +404,12 @@ name {
   display: none;
 }
 
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 .profile-image {
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
@@ -411,11 +417,208 @@ name {
   border: 3px solid transparent;
   background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
               var(--gradient-hero) border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
 
 .profile-image:hover {
   transform: scale(1.05) rotate(2deg);
   box-shadow: 0 16px 50px rgba(99, 102, 241, 0.4);
+}
+
+/* Watermark for profile image */
+.image-watermark {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  pointer-events: none;
+  user-select: none;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+
+/* Easter Egg Game Trigger */
+.easter-egg-trigger {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(240, 147, 251, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 998;
+  animation: bounce 2s infinite;
+}
+
+.easter-egg-trigger:hover {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 0 12px 32px rgba(240, 147, 251, 0.6);
+}
+
+.easter-egg-tooltip {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.easter-egg-trigger:hover .easter-egg-tooltip {
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Game Modal */
+.game-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease;
+}
+
+.game-modal.active {
+  display: flex;
+}
+
+.game-container {
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 30px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-header h2 {
+  font-size: 32px;
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.game-tagline {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.game-canvas {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to bottom, #1a1f3a 0%, #0a0e27 100%);
+  border-radius: 16px;
+  border: 2px solid rgba(99, 102, 241, 0.3);
+  display: block;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.game-score {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.game-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.game-btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-btn-primary {
+  background: var(--gradient-1);
+  color: white;
+}
+
+.game-btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-btn:hover {
+  transform: translateY(-2px);
+}
+
+.game-instructions {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Prevent image theft */
+.protected-image {
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 /* Section Styling - Glassmorphism */
