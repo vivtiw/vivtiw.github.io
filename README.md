@@ -4,19 +4,21 @@ This is the source code for Vivek Tiwari's personal website hosted at [vivek.git
 
 ## About
 
-Vivek Tiwari is a senior software developer at BMO Radicle in Vancouver, specializing in Climate Smart Applications to help customers reduce their carbon footprint. He has extensive experience in web development, machine learning, and optimization.
+Vivek Tiwari is a Principal Member of Technical Staff at Oracle in the San Francisco Bay Area, specializing in Cloud and HealthTech solutions. He has extensive experience in building secure, scalable applications across healthcare, security, and infrastructure domains.
 
 ## Education
 
-- **MS in Electrical and Computer Engineering** - University of Victoria (UVic) / University of British Columbia (UBC)
-- **Bachelors in Electronics and Communication** - National Institute of Technology, Durgapur, India (2009)
+- **MASc in Electrical and Computer Engineering** - University of Victoria (UVic) / University of British Columbia (UBC)
+- **B.Tech in Electronics and Communication** - National Institute of Technology, Durgapur, India
 
 ## Experience
 
-- **BMO Radicle** - Senior Software Developer (Climate Smart Applications)
-- **Fortinet** - Network Security/Firewall/Sandbox
-- **Motorola Solutions** - Access Control Space
-- **Broadcom** - VoIP Platform Team (Internship)
+- **Oracle** - Principal Member of Technical Staff (Healthcare & AI)
+- **Zscaler** - Senior Software Developer (DLP)
+- **BMO Radicle** - Senior Software Developer (Climate Tech)
+- **Motorola Solutions** - Senior Software Developer (Access Control)
+- **Fortinet** - Software Developer (Network Security)
+- **Broadcom** - Software Engineer Intern (VoIP Platform)
 
 ## Skills
 
