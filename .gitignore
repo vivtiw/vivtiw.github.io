@@ -12,3 +12,26 @@ Thumbs.db
 *.swp
 *.swo
 
+# AI assistant rules / config (never commit — may contain private workflow notes or credentials)
+CLAUDE.md
+.claude/
+.cursorrules
+.cursor/
+.windsurfrules
+.clinerules
+GEMINI.md
+AGENTS.md
+.aider*
+.github/copilot-instructions.md
+
+# Local backups & junk
+*.bak
+data/Profile_Lkdn.pdf
+images/Screenshot*.png
+
+# Local-only assets and tooling
+download_logos.sh
+images/avatar.png
+images/avatar.svg
+package-lock.json
+
