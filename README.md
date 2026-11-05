@@ -1,45 +1,25 @@
-# Vivek Tiwari - Personal Website
+# vivtiw.github.io
 
-This is the source code for Vivek Tiwari's personal website hosted at [vivek.github.io](https://vivek.github.io).
+Personal site of **Vivek Tiwari**: backend and infrastructure engineer building agentic AI systems.
 
-## About
+Live at **https://vivtiw.github.io**
 
-Vivek Tiwari is a Principal Member of Technical Staff at Oracle in the San Francisco Bay Area, specializing in Cloud and HealthTech solutions. He has extensive experience in building secure, scalable applications across healthcare, security, and infrastructure domains.
+- Dark terminal theme, with an interactive shell in the hero (try `help`, or `sudo hire vivek`)
+- Hand-written HTML, CSS and JS: no framework, no build step, no dependencies
+- Accessible: keyboard-driven terminal, `prefers-reduced-motion` respected, responsive down to mobile
 
-## Education
+## Structure
 
-- **MASc in Electrical and Computer Engineering** - University of Victoria (UVic) / University of British Columbia (UBC)
-- **B.Tech in Electronics and Communication** - National Institute of Technology, Durgapur, India
+```
+index.html   # content
+style.css    # theme
+main.js      # interactive terminal
+data/        # resume PDF
+images/      # avatar
+```
 
-## Experience
+## Local preview
 
-- **Oracle** - Principal Member of Technical Staff (Healthcare & AI)
-- **Zscaler** - Senior Software Developer (DLP)
-- **BMO Radicle** - Senior Software Developer (Climate Tech)
-- **Motorola Solutions** - Senior Software Developer (Access Control)
-- **Fortinet** - Software Developer (Network Security)
-- **Broadcom** - Software Engineer Intern (VoIP Platform)
-
-## Skills
-
-- Web Development
-- Machine Learning
-- Optimization
-- Network Security
-- Climate Technology
-
-## Contact
-
-- Email: ece.vivek@gmail.com
-- Twitter: [@vivtiw](https://twitter.com/vivtiw)
-- GitHub: [vivtiw](https://github.com/vivtiw/)
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Design
-- Modern Web Standards
-
-Feel free to explore the code and get inspired for your own personal website!
+```sh
+python3 -m http.server 8000   # then open http://localhost:8000
+```
