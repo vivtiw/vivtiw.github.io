@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://vivek.github.io/sitemap.xml
-
-# Crawl delay
-Crawl-delay: 1
-
+Sitemap: https://vivtiw.github.io/sitemap.xml
